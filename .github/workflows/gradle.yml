@@ -28,6 +28,12 @@ jobs:
       - name: Build
         run: ./gradlew build
 
+      - name: list dirs
+        run: ls
+
+      - name: list dirs2
+        run: ls ./build
+
       - name: Remove *-sources.jar
         run: rm ./build/libs/*-sources.jar || true
 
